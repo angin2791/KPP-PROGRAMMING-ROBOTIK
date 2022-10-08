@@ -39,8 +39,7 @@ int speed_dgn_loss(int input)
 
 int main() {
     int input;
-    float jarak;
-    float Vtangensial;
+    float jarak, Vtangensial;
   	cin >> input;
     jarak = (pow(mencari_V0(input,speed_dgn_loss(input)),2)* sin(SUDUT*3.14159*2/180) / GRAVITASI) - START_PENGUKURAN;
     jarak = round(jarak);
